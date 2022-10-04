@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>About Us | MFFL</title>
+  <meta name="description" content="Educatiing users about us here at the Montreal Flag Football League." />
+  <meta name="author" content="Seena Sabet-Kassouf & Matthew Reda" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/8dd9792caa.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../../scripts/index.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../../css/bulma.css" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../../images/logo.jpg" />
+</head>
+
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- open header-->
+  <header class="header">
+    <a href="index.html" title="Go Home"><img src="../../images/logo.jpg" alt="MFFL Logo" title="MFFL Logo" width="100"
+        height="100" /> </a>
+    <!-- open nav -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" id="selected">About Us</a></li>
+        <li><a href="teams-current.html">Teams</a></li>
+        <li><a href="standings-current.html">Standings</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html" class="language" ><button>English</button></a></li>
+        <li><a href="../french/index.html" class="language"><button>French</button></a></li>
+      </ul>
+    </nav>
+    <!-- close nav -->
+  </header>
+  <!-- close header -->
+
+  <!-- open main -->
+  <!-- close main -->
+
+
+  <!-- open main -->
+  <main class="index-main">
+    <div class="container">
+      <a id="about-top"><h2 id="menu-header" class="has-text-centered">About Us </h2></a>
+      <div id="about-menu" class="tabs is-boxed tab-margin">
+        <ul>
+          <a href="#league-pointer">
+            <li>League Information</li>
+          </a>
+          <a href="#timeline-pointer">
+            <li>Timeline</li>
+          </a>
+          <a href="#faq-pointer">
+            <li>F.A.Q</li>
+          </a>
+          <a href="#location-pointer">
+            <li>Locations</li>
+          </a>
+          <a href="#team-pointer">
+            <li>Our Team</li>
+          </a>
+
+        </ul>
+      </div>
+
+      <section class="hero">
+        <div class="hero-body">
+          <figure><img src="../../images/flag-football3.jpg" alt="flag football image" width="100%"></figure>
+        </div>
+      </section>
+      <div class="columns league-info">
+        <div class="column is-full has-text-centered content">
+          <a id="league-pointer" href="#about-top">
+            <h2><strong>League Information</strong></h2>
+          </a>
+          <p><strong>Montreal Flag Football League (MFFL)</strong> is a flag football league located on the island of
+            Montreal in Quebec, Canada. The league had its first season debut in the summer of 2019. Since then, the
+            number of teams per season has doubled! We now have 12 teams that all face-off against each other in an
+            exciting 10 week round-robin showdown. </p>
+          <hr>
+          <p>
+            Our league is a men's only league with an age restriction of minimum 18 to maximum 30 years of age. Our goal
+            in doing so is to provide a very competitive league format. Our field dimensions are 50 yards long (plus 8
+            yards end zones on each end) and 30 yards wide.
+          </p>
+        </div>
+      </div>
+      <div class="columns timeline-info">
+        <div class="column is-full has-text-centered content">
+          <a id="timeline-pointer" href="#about-top"><h2><strong>Timeline</strong></h2></a>
+          <progress id="prog-bar" class="progress is-small is-primary" value="0" max="100"></progress>
+          <div id="timeline-buttons" class="columns">
+            <div class="column has-text-centered content">
+              <button id="button-1">2019</button>
+              <p id="para-1"> League Inauguration (6 Teams) </p>
+            </div>
+            <div class="column has-text-centered content">
+              <button id="button-2">2020</button>
+              <p id="para-2">Activities Stopped (Coronavirus) </p>
+            </div>
+            <div class="column has-text-centered content">
+              <button id="button-3">2021</button>
+              <p id="para-3">League Expands (8 Teams) </p>
+            </div>
+            <div class="column has-text-centered content">
+              <button id="button-4">2022</button>
+              <p id="para-4">League Expands (12 Teams) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns FAQ-location">
+        <div id="faq-styles" class="column is-one-third content faq-info">
+          <a id="faq-pointer" href="#about-top"><h2 class="has-text-centered"><strong> F.A.Q.</strong></h2></a>
+          <div id="accordion">
+            <h3>How long does the season last?</h3>
+            <div>
+              <p> The season always starts on the first saturday of July and last 10 weeks.
+              </p>
+            </div>
+            <h3>Are matches cancelled if it rains?</h3>
+            <div>
+              <p> No! We have dedicated indoor facilities in case this happens.
+              </p>
+            </div>
+            <h3>Do you offer any food and/or beverages?</h3>
+            <div>
+              <p> Yes! We have a snack bar on the premise.
+              </p>
+            </div>
+            <h3>Can I bring my dog?</h3>
+            <div>
+              <p> Yes, but he must be on leash at all times..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column has-text-centered content">
+          <a id="location-pointer" href="#about-top"> <h2><strong>Our Locations</strong></h2></a>
+          <div class="columns">
+            <div class="column">
+              <iframe class="page-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.85885116856!2d-73.59711718394902!3d45.57327697910246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ec0e8ffa6f1%3A0xc3fb73304ede58a5!2sStade%20H%C3%A9bert!5e0!3m2!1sen!2sca!4v1657724866396!5m2!1sen!2sca"
+                width="390" height="292" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="column">
+              <iframe class="page-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.8733283148063!2d-73.63914808394958!3d45.552873679102056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918da45abf9cf%3A0x7e6d8f235484c77d!2sComplexe%20sportif%20Claude-Robillard!5e0!3m2!1sen!2sca!4v1657724987350!5m2!1sen!2sca"
+                width="390" height="292" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-two-thirds has-text-centered content">
+          <figure>
+            <img src="../../images/team-photo.jpg" alt="Team Photo">
+          </figure>
+
+        </div>
+        <div class="column is-one-third has-text-centered content">
+          <a id="team-pointer" href="#about-top"><h2>Contact Information <br> Our Team</h2></a>
+          <div class="card">
+            <div class="contact-member-info">
+              <ul>
+                <li>Email: mffl@gmail.com</li>
+                <li>Phone: (514)-123-4567</li>
+              </ul>
+              <hr style="border: 1px groove rgb(167, 154, 154);">
+              <ul>
+                <li>Matthew Reda | Co-Founder</li>
+                <li>Seena Sabet-Kassouf | Co-Founder</li>
+                <li>Sabrina Potager | Manager</li>
+                <li>Alfred Dallaire | Assistant Manager</li>
+                <li>John Smith | Social Media and Communications</li>
+                <li>Bob Trevor | Scorekeeper</li>
+                <li>Amanda Betler | Referee</li>
+                <li>Victor Hedman | Linesman</li>
+                <li>Bob Mackenzie | Snack Bar Manager</li>
+                <li>Emily White | Play-by-play</li>
+                <li>Josh Pat | Equipment Manager</li>
+                <li>Will Hunting | Janitor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- close main-->
+
+  <!-- open footer -->
+  <footer class="page-footer">
+    <div class="content has-text-centered">
+      <p>
+        Website Developed By: Matthew Reda and Seena Sabet-Kassouf
+      </p>
+      <p>
+        Copyright &copy; 2022
+      </p>
+      <i class="fa fa-football fa-bounce"></i>
+      <ul>
+        <li><a href="https://www.facebook.com/" class="fa fa-facebook-square" title="Facebook"
+            style="font-size:20px;"></a> </li>
+        <li><a href="https://twitter.com/?lang=en" class="fa fa-twitter-square" title="Twitter"
+            style="font-size:20px;"></a></li>
+        <li><a href="https://www.youtube.com/" class="fa fa-youtube-play" style="font-size:20px;" title="YouTube"></a>
+        </li>
+        <li><a href="https://www.instagram.com/?hl=en" title="Instagram" class="fa fa-instagram"
+            style="font-size:20px;"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- close footer -->
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
