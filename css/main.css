@@ -1,0 +1,612 @@
+@-webkit-keyframes fade-in {
+  0% {
+    background-color: black;
+  }
+}
+@keyframes fade-in {
+  0% {
+    background-color: black;
+  }
+}
+body {
+  background-color: #E5E3E3;
+}
+
+.nav-bar {
+  background-color: #565655;
+  margin: 0 0 100px 0;
+  vertical-align: center;
+}
+
+.header img {
+  float: left;
+}
+
+.nav-bar ul {
+  padding: 10px;
+}
+
+.nav-bar ul li,
+.page-footer ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.page-footer ul li {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-right: 2rem;
+}
+
+.nav-bar ul li a,
+.page-footer ul li a {
+  color: white;
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+ul li a.fa {
+  padding: 5px;
+}
+
+.nav-bar ul li a:hover,
+.fa-youtube-play:hover {
+  color: #E1140E;
+}
+
+.nav-bar ul li a:active {
+  font-size: 14pt;
+  color: #E1140E;
+}
+
+ul li a.fa-facebook-square:hover {
+  color: #3E83FD;
+  font-weight: 700;
+}
+
+ul li a.fa-twitter-square:hover {
+  color: #1EB3FD;
+  font-weight: 700;
+}
+
+ul li a.fa-instagram:hover {
+  color: #FB1AA8;
+  font-weight: 700;
+}
+
+.nav-bar ul li a button {
+  background-color: #565655;
+  margin: 0 10px 0 0;
+  padding: 5px;
+  color: white;
+  font-weight: 700;
+  float: right;
+  font-size: 12px;
+}
+
+.nav-bar button:hover {
+  color: #E1140E;
+  font-weight: 700;
+}
+
+.page-footer {
+  background-color: #565655;
+  color: white;
+  padding: 20px;
+  clear: both;
+}
+
+.page-footer i {
+  font-size: 20pt;
+  color: #D47C09;
+}
+
+.page-iframe {
+  margin-top: 30px;
+}
+
+.contact-member-info {
+  padding: 10px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.contact-member-info ul {
+  list-style: none;
+}
+
+.league-info:hover,
+.timeline-info:hover,
+.faq-info:hover {
+  background-color: rgba(255, 255, 255, 0.579);
+}
+
+.league-info,
+.timeline-info,
+.faq-info {
+  background-color: rgba(255, 255, 255, 0.579);
+  margin: 0.1rem;
+}
+
+.FAQ-location {
+  margin-top: 1rem;
+}
+
+main.index-main div div div hr {
+  border: none;
+  background-color: rgba(129, 103, 103, 0.629);
+}
+
+.table tbody tr td img {
+  width: 4rem;
+  padding-right: 1rem;
+}
+
+.red-trophy {
+  color: #E1140E;
+  padding-left: 1rem;
+}
+
+.table caption {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.table {
+  margin: 2rem;
+}
+
+.page-border {
+  border: 2px solid black;
+}
+
+.tab-margin {
+  margin: 3rem;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for register.html */
+#register-main {
+  float: left;
+  margin: 0 50px 0 0;
+}
+
+.field {
+  margin: 5px;
+  border: 5px outset #E1140E;
+  padding: 5px;
+  background-color: white;
+}
+
+.field > legend {
+  font-weight: 700;
+  padding: 5px;
+  color: black;
+}
+
+.field > table {
+  margin: 5px;
+}
+
+.field > table tr td {
+  padding: 5px;
+  color: black;
+}
+
+#register-right table {
+  margin: 30px;
+  background-color: white;
+}
+
+#register-right table caption {
+  font-weight: 700;
+  font-size: 15pt;
+}
+
+#register-right table tr td {
+  margin: 20px;
+  border: 5px inset #E1140E;
+  padding: 20px;
+}
+
+#register-right table tr td ul li {
+  margin: 10px;
+  padding: 5px;
+  list-style-type: lower-roman;
+  text-align: left;
+  color: black;
+}
+
+#register-right p {
+  font-weight: 700;
+  color: black;
+}
+
+#register-right table tr th {
+  border: 5px inset #E1140E;
+  border-collapse: collapse;
+  color: black;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button],
+a.register > button {
+  background-color: #E1140E;
+  margin: 10px;
+  border: 2px outset black;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: black 5px 5px;
+  font-weight: 700;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+a.register > button:hover {
+  text-decoration: underline;
+}
+
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active,
+a.register > button:active {
+  padding: 5px;
+  font-size: 10pt;
+  box-shadow: none;
+}
+
+input[id=email],
+input[id=city-2],
+input[id=postal-code-2],
+input[id=bill-city],
+input[id=bill-postal-code] {
+  width: 50%;
+}
+
+.payment {
+  margin-bottom: 90px;
+}
+
+#register-right table th,
+#register-right table td {
+  padding: 0 2px;
+  font-size: 15px;
+}
+
+#register-right table caption {
+  font-weight: 700;
+  color: black;
+  font-size: 25px;
+}
+
+#register-main div h1 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+}
+
+#team-form {
+  margin: 10px 0 125px 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for register-complete.html */
+section.complete {
+  text-align: center;
+  width: 35%;
+  margin: 0 auto;
+  margin-bottom: 285px;
+  border: 5px outset #E1140E;
+  background-color: white;
+}
+
+.complete > h2 {
+  font-weight: 700;
+  font-size: 20pt;
+  padding: 20px;
+}
+
+.complete > p {
+  font-size: 15pt;
+  margin: 0 0 10px 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for teams-current.html, teams-2021.html and teams-2019.html */
+div.teams {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 30px;
+  margin-top: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+div.teams div.team figure {
+  text-align: center;
+  padding-top: 10px;
+}
+
+div.teams div.team figure h3 {
+  font-size: 15pt;
+  font-weight: 700;
+  color: #E1140E;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for results-week3.html, results-week2.html and results-week3.html */
+section.results div {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+}
+
+section.results h3 {
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 20px;
+  font-size: 15pt;
+  color: black;
+}
+
+.results > div > table {
+  background-color: white;
+  margin: 5px;
+  margin-bottom: 20px;
+  border: 2px groove black;
+}
+
+.results > div > table tr {
+  border-bottom: 2px groove black;
+}
+
+.results > div > table tr td {
+  padding: 10px;
+  color: black;
+}
+
+.results > div > table tr td a {
+  padding: 10px;
+  color: black;
+}
+
+.results > div > table tr td a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+tr.first-row {
+  background-color: #6E6E6E;
+  font-weight: 700;
+}
+
+tr.second-row {
+  background-color: #B9B4B7;
+  font-weight: 700;
+}
+
+tr.winner {
+  background-color: #89FE5E;
+}
+
+tr.loser {
+  background-color: #FE5D5D;
+}
+
+tr.winner td,
+tr.loser td {
+  color: black;
+  font-weight: 700;
+}
+
+tr.winner td a,
+tr.loser td a {
+  color: black;
+  font-weight: 700;
+}
+
+tr.winner td a:hover,
+tr.loser td a:hover {
+  color: white;
+  font-weight: 700;
+}
+
+div.results-buttons {
+  text-align: center;
+}
+
+div.results-buttons button {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: black -2px -2px;
+  font-size: 15pt;
+  -webkit-animation: fade-in 2s linear both;
+          animation: fade-in 2s linear both;
+}
+
+div.results-buttons button:hover {
+  background-color: #E1140E;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for index.html */
+main.main-index div.articles {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin: 15px;
+}
+
+section.summary {
+  margin: 20px;
+  padding: 5px;
+  width: 60%;
+}
+
+section.summary h1 {
+  font-weight: 700;
+  font-size: 27pt;
+  color: black;
+  float: left;
+  -webkit-animation: pop 0.5s linear 1;
+          animation: pop 0.5s linear 1;
+  margin-left: 10px;
+}
+
+section.summary p {
+  text-indent: 20px;
+  margin: 10px;
+  padding: 5px;
+  float: left;
+  color: black;
+}
+
+section.summary p a {
+  color: black;
+}
+
+section.summary p a:hover {
+  color: #E1140E;
+  text-decoration: underline;
+}
+
+section.video {
+  margin: 20px;
+  border: 5px inset #E1140E;
+  padding: 20px;
+  box-shadow: black 5px 5px;
+  float: left;
+  clear: left;
+  background-color: white;
+  width: 55%;
+}
+
+section.video h3 {
+  font-weight: 700;
+  font-size: 15pt;
+  color: black;
+}
+
+div.articles article {
+  margin: 20px;
+  border: 5px inset black;
+  padding: 10px;
+  background-color: white;
+  box-shadow: black 5px 5px;
+}
+
+div.articles h2 {
+  font-weight: 700;
+  font-size: 15pt;
+  margin: 10px 0 0 0;
+}
+
+div.articles p {
+  text-indent: 20px;
+  margin: 10px;
+}
+
+div.articles p.last-line {
+  text-indent: 0px;
+  font-weight: 700;
+}
+
+div.articles p.last-line a {
+  color: #E1140E;
+  text-decoration: underline;
+}
+
+div.articles p.last-line a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+div.articles p.byline {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-indent: 0;
+}
+
+#selected {
+  color: #E1140E;
+  font-weight: 700;
+}
+
+#menu-header {
+  font-size: 1.5rem;
+  color: #E1140E;
+  font-weight: 700;
+  box-shadow: 2px 4px #565655;
+  border: 1px solid #565655;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#about-menu ul {
+  justify-content: center;
+}
+
+#about-menu ul li {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 700;
+}
+
+div#faq-styles div#accordion h3 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div#faq-styles div#accordion h3:hover {
+  background-color: lightgrey;
+}
+
+div#timeline-buttons div p {
+  display: none;
+}
+
+#feedback-form {
+  margin-left: 3rem;
+}
+
+#changes-interface {
+  border: 5px groove #E1140E;
+  box-shadow: 2px 4px #E1140E;
+  margin: 2rem;
+  background-color: white;
+}
+
+#changes-interface h2 {
+  font-size: x-large;
+  color: #E1140E;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#changes-interface div {
+  font-size: small;
+  font-weight: bold;
+  border: 1px solid black;
+  width: 400px;
+  margin: 1rem auto;
+  box-shadow: 2px 4px black;
+}
+
+#feedback-p {
+  width: 800px;
+  text-align: justify;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */

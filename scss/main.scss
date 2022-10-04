@@ -1,0 +1,631 @@
+@import '_variables.scss';
+
+@mixin teams-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 30px;
+    margin-top: 0;
+    padding: 10px;
+}
+
+@mixin results-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+}
+
+@keyframes fade-in {
+    0% {
+        background-color: $register-border-color;
+    }
+}
+
+//-------------- BODY, NAV, FOOTER AND BUTTONS (EN/FR) for All Pages --------------
+
+body {
+    background-color: $background-color;
+}
+
+.nav-bar {
+    background-color: $nav-footer-color;
+    margin: 0 0 100px 0;
+    vertical-align: center;
+}
+
+.header img {
+    float: left;
+}
+
+.nav-bar ul {
+    padding: 10px;
+}
+
+.nav-bar ul li,
+.page-footer ul li {
+    display: inline;
+    padding: 10px;
+}
+
+.page-footer ul li {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-right: 2rem;
+}
+
+
+
+.nav-bar ul li a,
+.page-footer ul li a {
+    color: $nav-link-color;
+    font-weight: map-get($font-weight , "bold");
+    font-size: 15pt;
+}
+
+ul li a.fa {
+    padding: 5px;
+}
+
+.nav-bar ul li a:hover,
+.fa-youtube-play:hover {
+    color: $nav-hover-color;
+}
+
+
+.nav-bar ul li a:active {
+    font-size: 14pt;
+    color: $nav-hover-color;
+}
+
+ul li a.fa-facebook-square:hover {
+    color: $facebook-color;
+    font-weight: map-get($font-weight , "bold");
+}
+
+ul li a.fa-twitter-square:hover {
+    color: $twitter-color;
+    font-weight: map-get($font-weight , "bold");
+}
+
+ul li a.fa-instagram:hover {
+    color: $instagram-color;
+    font-weight: map-get($font-weight , "bold");
+}
+
+.nav-bar ul li a button {
+    background-color: $nav-footer-color;
+    margin: 0 10px 0 0;
+    padding: 5px;
+    color: $nav-link-color;
+    font-weight: map-get($font-weight , "bold");
+    float: right;
+    font-size: 12px;
+}
+
+.nav-bar button:hover {
+    color: $nav-hover-color;
+    font-weight: map-get($font-weight , "bold");
+}
+
+.page-footer {
+    background-color: $nav-footer-color;
+    color: $footer-text-color;
+    padding: 20px;
+    clear: both;
+}
+
+.page-footer i {
+    font-size: 20pt;
+    color: #D47C09;
+}
+
+//-------------- about.html --------------
+.page-iframe {
+    margin-top: 30px;
+}
+
+.contact-member-info {
+    padding: 10px;
+    font-weight: map-get($font-weight, bold);
+    text-align: left;
+}
+
+.contact-member-info ul {
+    list-style: none;
+}
+
+.league-info:hover,
+.timeline-info:hover,
+.faq-info:hover {
+    background-color: rgba(255, 255, 255, 0.579);
+}
+
+.league-info,
+.timeline-info,
+.faq-info {
+    background-color: rgba(255, 255, 255, 0.579);
+    margin: 0.1rem;
+}
+
+.FAQ-location {
+    margin-top: 1rem;
+}
+
+main.index-main div div div hr {
+    border: none;
+    background-color: rgba(129, 103, 103, 0.629);
+}
+
+//-------------- schedule.html --------------
+.table tbody tr td img {
+    width: 4rem;
+    padding-right: 1rem;
+}
+
+//-------------- standings-current.html, standings-2021.html, standing-2019.html --------------
+.red-trophy {
+    color: $nav-hover-color;
+    padding-left: 1rem;
+}
+
+.table caption {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.table {
+    margin: 2rem;
+}
+
+.page-border {
+    border: 2px solid black;
+}
+
+.tab-margin {
+    margin: 3rem;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for register.html */
+#register-main {
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+.field {
+    margin: 5px;
+    border: 5px outset $nav-hover-color;
+    padding: 5px;
+    background-color: $nav-link-color;
+}
+
+.field>legend {
+    font-weight: map-get($font-weight, "bold");
+    padding: 5px;
+    color: $register-border-color;
+}
+
+.field>table {
+    margin: 5px;
+}
+
+.field>table tr td {
+    padding: 5px;
+    color: $register-border-color;
+}
+
+#register-right table {
+    margin: 30px;
+    background-color: $nav-link-color;
+}
+
+#register-right table caption {
+    font-weight: map-get($font-weight, "bold");
+    font-size: 15pt;
+}
+
+#register-right table tr td {
+    margin: 20px;
+    border: 5px inset $nav-hover-color;
+    padding: 20px;
+}
+
+#register-right table tr td ul li {
+    margin: 10px;
+    padding: 5px;
+    list-style-type: lower-roman;
+    text-align: left;
+    color: $register-border-color;
+}
+
+#register-right p {
+    font-weight: map-get($font-weight, "bold");
+    color: $register-border-color;
+}
+
+#register-right table tr th {
+    border: 5px inset $nav-hover-color;
+    border-collapse: collapse;
+    color: $register-border-color;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button],
+a.register>button {
+    background-color: $nav-hover-color;
+    margin: 10px;
+    border: 2px outset black;
+    padding: 10px;
+    border-radius: 10px;
+    color: $nav-link-color;
+    box-shadow: $register-border-color 5px 5px;
+    font-weight: map-get($font-weight, "bold");
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover,
+a.register>button:hover {
+    text-decoration: underline;
+}
+
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active,
+a.register>button:active {
+    padding: 5px;
+    font-size: 10pt;
+    box-shadow: none;
+}
+
+input[id=email],
+input[id=city-2],
+input[id=postal-code-2],
+input[id=bill-city],
+input[id=bill-postal-code] {
+    width: 50%;
+}
+
+.payment {
+    margin-bottom: 90px;
+}
+
+#register-right table th,
+#register-right table td {
+    padding: 0 2px;
+    font-size: 15px;
+}
+
+#register-right table caption {
+    font-weight: map-get($font-weight, "bold");
+    color: black;
+    font-size: 25px;
+}
+
+#register-main div h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: map-get($font-weight, "bold");
+    color: black;
+}
+
+#team-form {
+    margin: 10px 0 125px 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for register-complete.html */
+section.complete {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 285px;
+    border: 5px outset $nav-hover-color;
+    background-color: $nav-link-color;
+}
+
+.complete>h2 {
+    font-weight: map-get($font-weight, "bold");
+    font-size: 20pt;
+    padding: 20px;
+}
+
+.complete>p {
+    font-size: 15pt;
+    margin: 0 0 10px 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for teams-current.html, teams-2021.html and teams-2019.html */
+
+div.teams {
+    @include teams-grid();
+    background-color: $footer-text-color;
+}
+
+div.teams div.team figure {
+    text-align: center;
+    padding-top: 10px;
+}
+
+div.teams div.team figure h3 {
+    font-size: 15pt;
+    font-weight: map-get($font-weight, "bold");
+    color: $nav-hover-color
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for results-week3.html, results-week2.html and results-week3.html */
+
+section.results div {
+    @include results-grid();
+}
+
+section.results h3 {
+    font-weight: map-get($font-weight, "bold");
+    text-decoration: underline;
+    margin: 20px;
+    font-size: 15pt;
+    color: $register-border-color;
+}
+
+.results>div>table {
+    background-color: $footer-text-color;
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 2px groove $register-border-color;
+}
+
+.results>div>table tr {
+    border-bottom: 2px groove $register-border-color;
+}
+
+.results>div>table tr td {
+    padding: 10px;
+    color: $register-border-color
+}
+
+.results>div>table tr td a {
+    padding: 10px;
+    color: $register-border-color;
+}
+
+.results>div>table tr td a:hover {
+    font-weight: map-get($font-weight, "bold");
+    text-decoration: underline;
+}
+
+tr.first-row {
+    background-color: $first-row-color;
+    font-weight: map-get($font-weight, "bold");
+}
+
+tr.second-row {
+    background-color: $second-row-color;
+    font-weight: map-get($font-weight, "bold");
+}
+
+tr.winner {
+    background-color: $winner-color;
+}
+
+tr.loser {
+    background-color: $loser-color;
+}
+
+tr.winner td,
+tr.loser td {
+    color: $register-border-color;
+    font-weight: map-get($font-weight, "bold");
+}
+
+tr.winner td a,
+tr.loser td a {
+    color: $register-border-color;
+    font-weight: map-get($font-weight, "bold");
+}
+
+tr.winner td a:hover,
+tr.loser td a:hover {
+    color: $footer-text-color;
+    font-weight: map-get($font-weight, "bold");
+}
+
+div.results-buttons {
+    text-align: center;
+}
+
+div.results-buttons button {
+    margin: 10px;
+    padding: 20px;
+    background-color: $footer-text-color;
+    box-shadow: $register-border-color -2px -2px;
+    font-size: 15pt;
+    animation: fade-in 2s linear both;
+}
+
+div.results-buttons button:hover {
+    background-color: $nav-hover-color;
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------- */
+/* styles for index.html */
+
+main.main-index div.articles {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 15px;
+
+}
+
+section.summary {
+    margin: 20px;
+    padding: 5px;
+    width: 60%;
+}
+
+section.summary h1 {
+    font-weight: map-get($font-weight, "bold");
+    font-size: 27pt;
+    color: $register-border-color;
+    float: left;
+    animation: pop 0.5s linear 1;
+    margin-left: 10px;
+}
+
+section.summary p {
+    text-indent: 20px;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+    color: $register-border-color;
+}
+
+section.summary p a {
+    color: $register-border-color;
+}
+
+section.summary p a:hover {
+    color: $nav-hover-color;
+    text-decoration: underline;
+}
+
+section.video {
+    margin: 20px;
+    border: 5px inset $nav-hover-color;
+    padding: 20px;
+    box-shadow: $register-border-color 5px 5px;
+    float: left;
+    clear: left;
+    background-color: $footer-text-color;
+    width: 55%;
+}
+
+section.video h3 {
+    font-weight: map-get($font-weight, "bold");
+    font-size: 15pt;
+    color: $register-border-color;
+}
+
+div.articles article {
+    margin: 20px;
+    border: 5px inset $register-border-color;
+    padding: 10px;
+    background-color: $footer-text-color;
+    box-shadow: $register-border-color 5px 5px;
+}
+
+div.articles h2 {
+    font-weight: map-get($font-weight, "bold");
+    font-size: 15pt;
+    margin: 10px 0 0 0;
+}
+
+
+div.articles p {
+    text-indent: 20px;
+    margin: 10px;
+}
+
+div.articles p.last-line {
+    text-indent: 0px;
+    font-weight: map-get($font-weight, "bold");
+}
+
+div.articles p.last-line a {
+    color: $nav-hover-color;
+    text-decoration: underline;
+}
+
+div.articles p.last-line a:hover {
+    color: $register-border-color;
+    text-decoration: none;
+}
+
+div.articles p.byline {
+    font-weight: map-get($font-weight, "bold");
+    margin: 0 0 10px 0;
+    text-indent: 0;
+}
+
+// -------------------------- CSS CHANGES TO NEW PROJECT (August 12th, 2022) -------------------------- 
+#selected {
+    color: $nav-hover-color;
+    font-weight: map-get($font-weight , "bold");
+}
+
+#menu-header {
+    font-size: 1.5rem;
+    color: $nav-hover-color;
+    font-weight: map-get($font-weight , "bold");
+    box-shadow: 2px 4px $nav-footer-color;
+    border: 1px solid $nav-footer-color;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#about-menu ul {
+    justify-content: center;
+}
+
+#about-menu ul li {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: map-get($font-weight , "bold");
+
+}
+
+div#faq-styles div#accordion h3 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div#faq-styles div#accordion h3:hover {
+    background-color: lightgrey;
+}
+
+div#timeline-buttons div p {
+    display: none;
+}
+
+#feedback-form {
+    margin-left: 3rem;
+}
+
+#changes-interface {
+    border: 5px groove $nav-hover-color;
+    box-shadow: 2px 4px $nav-hover-color;
+    margin: 2rem;
+    background-color: white;
+}
+
+#changes-interface h2 {
+    font-size: x-large;
+    color: $nav-hover-color;
+    font-weight: map-get($font-weight , "bold");
+    text-align: center;
+    text-decoration: underline;
+}
+
+#changes-interface div {
+    font-size: small;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 400px;
+    margin: 1rem auto;
+    box-shadow: 2px 4px black;
+}
+
+#feedback-p {
+    width: 800px;
+    text-align: justify;
+    margin: auto;
+}
